@@ -1,0 +1,61 @@
+body {
+  margin: 0px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100% !important;
+}
+
+table th {
+  padding: 8px;
+  font-size: 23px !important;
+  font-weight: bold;
+  font-family: serif;
+  color: black;
+}
+
+table td {
+  border: 1px solid #ddd;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 8px;
+  color: gray;
+  text-align: center;
+  font-family: serif;
+}
+
+table .even {
+  background-color: #E9F5E2;
+}
+
+table .heading {
+  padding: 8px;
+  font-size: 19px !important;
+  font-weight: bold;
+  font-family: serif;
+  color: white;
+  background-color: #85ec13;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table .title {
+  padding: 8px;
+  font-size: 16px !important;
+  font-weight: bold;
+  font-family: serif;
+  color: #6d6363;
+  border: 1px solid #ddd;
+  background-color: white;
+}
+
+table ul {
+  text-align: justify;
+}
+/*# sourceMappingURL=main.css.map */

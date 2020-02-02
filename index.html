@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Mongo DB</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+    <table>
+    <thead>
+ 
+        <tr>
+            <th colspan="5">MongoDB</th>
+        </tr>
+        <tr>
+            <th colspan="5" class="heading">Basic Commands Mongo DB</th>
+           
+        </tr> 
+        <tr>
+            <th class="title">No</th>
+            <th class="title">Commands</th>
+            <th class="title">Descrioption</th>
+            <th class="title">Example</th>
+            <th class="title">output</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr class="even">
+            <td>1</td>
+            <td>mongod</td>
+            <td>start database </td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>mongo</td>
+            <td>connect to database</td>
+            <td>-</td>
+            <td>-</td>
+        </tr>
+        <tr class="even">
+            <td>3</td>
+            <td>db</td>
+            <td>show active Database </td>
+            <td>-</td>
+            <td> test</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>show dbs</td>
+            <td>List all available Database</td>
+            <td>-</td>
+            <td>
+            <ul>
+            <li>admin</li>
+            <li>config</li>
+            <li>local</li>
+            </ul>
+            </td>
+        </tr>
+         <tr class="even">
+            <td>5</td>
+            <td>use databasename</td>
+            <td>create datebase or switch to another database</td>
+            <td>-</td>
+            <td> switched to db database name</td>
+        </tr>
+         <tr>
+            <td>6</td>
+            <td>db.help()</td>
+            <td>help</td>
+            <td>-</td>
+            <td>......</td>
+        </tr>
+         <tr class="even">
+            <td>7</td>
+            <td>show collections</td>
+            <td>display current database collections</td>
+            <td>-</td>
+            <td>  <ul>
+            <li>list</li>
+            <li>main</li>
+            <li>cal</li>
+            </ul></td>
+        </tr>
+           <tr>
+            <th colspan="5" class="heading">Create </th>
+            </tr>
+            <tr>
+            <th class="title">No</th>
+            <th class="title">Commands</th>
+            <th class="title">Descrioption</th>
+            <th class="title">Example</th>
+            <th class="title">output</th>
+        </tr>
+    
+       
+            <td>1</td>
+            <td>db.createCollection('collectionname')</td>
+            <td>create New collection</td>
+            <td>db.createCollection('details')</td>
+            <td>{"Ok":1}</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>insert({key:value})</td>
+            <td>insert Documents</td>
+            <td>db.name.insert({"Id":3,"name":"arun","age":25})
+</td>
+            <td>WriteResult({"ninserted":1})</td>
+        </tr>
+        <tr class="even">
+        <td>3</td>
+            <td>insertOne({key:value,key:value})</td>
+            
+            <td>insert one document </td>
+            <td>
+ db.delete.insertOne({"Id":5,"name":"aruna","age":25,"no":3333})</td>
+            <td> {
+        "acknowledged" : true,
+        "insertedId" : ObjectId("5e3688ed89fde004cf1deabb")
+}
+</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>insertMany({key:value},{key:value},{key:value})</td>
+            <td>insert many documents and needs square brackets</td>
+            <td> db.delete.insertMany([{"Id":10,"name":"aruna","age":25,"no":33033},{"Id":11,"name":"aruna1","age":26,"no":33133},{"Id":12,"name":"aruna2","age":27,"no":33233}])</td>
+            <td>{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("5e368bff89fde004cf1deabc"),
+                ObjectId("5e368bff89fde004cf1deabd"),
+                ObjectId("5e368bff89fde004cf1deabe")
+        ]
+}</td>
+        
+        </tr>
+      
+  
+  
+
+        </tbody>
+  
+
+    </table>
+</div>
+</body>
+</html>
